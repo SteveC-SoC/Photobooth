@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  background: url(./circusBG.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+header {
+  font-size: 50px;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  align-self: center;
+}
+
+.picture {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -0px;
+
+}
+
+.photo{
+    max-width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.video {
+  visibility: hidden;
+  max-width: 0px;
+    max-height: 0px;
+}
+
+.cheese {
+    color: #f0c33c;
+    font-style: italic;
+    font-size: 30px;
+   
+}
+
+.strip {
+  padding: 2rem;
+  position: relative;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}
+
+
+.words{
+  color: white;
+}
